@@ -13,7 +13,6 @@ legendasArray.map(span => {
     }
 
     const todasAvaliacoes = avaliacoes.join("\n")
-    console.log(todasAvaliacoes)
     exportCSV.addEventListener('click', () => {
       exportCSV.setAttribute('href', `data:text/csvcharset=utf-8,${encodeURIComponent(todasAvaliacoes)}`)
 
